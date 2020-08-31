@@ -1,0 +1,24 @@
+[{
+    "pid":1001,
+    "pname":"小米",
+    "price":3000,
+    "count":40
+},
+{
+    "pid":1002,
+    "pname":"戴尔",
+    "price":5000,
+    "count":20
+},
+{
+    "pid":1003,
+    "pname":"华为",
+    "price":1000,
+    "count":30
+},
+{
+    "pid":1004,
+    "pname":"联想",
+    "price":2000,
+    "count":50
+}]

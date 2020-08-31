@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p{
+        margin-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+
+    <button type="submit" id="btn1">小明</button>
+    <p id="p1"></p>
+    
+    <button type="submit" id="btn2">小红</button>
+    <p id="p2"></p>
+
+<script>
+    btn1.onclick = function(){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4&&xhr.status==200){ 
+            p1.innerHTML = '你好，我叫小明';
+        }
+    };
+    xhr.open('get','./text_03.php');
+    xhr.send(null);
+}
+    btn2.onclick = function(){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState==4&&xhr.status==200){
+            console.log(xhr.responseText);
+            p2.innerHTML = '你好，我叫小红';
+        }
+    };
+    xhr.open('get','./text_03.php');
+    xhr.send(null);
+}
+</script>
+</body>
+</html>

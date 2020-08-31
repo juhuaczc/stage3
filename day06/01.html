@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/tijiao" method="post" enctype="multipart/form-data"> <!-- 只有使用了multipart/form-data，才能完整的传递文件数据。 -->
+       
+        <div>
+            text: <input type="text" name="txt">
+        </div>
+        <div>
+            pic1: <input type="file" name="pic1">
+        </div>
+        <div>
+            pic2: <input type="file" name="pic2">
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>
